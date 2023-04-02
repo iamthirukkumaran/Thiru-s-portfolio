@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+.navbar-nav{
+    margin-left:40%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-item{
+    margin-left:2%;
+}
+
+.navbar-light .navbar-brand{
+    margin-left: 15%;
+    color: #14279B;
+}
+
+.homebx{
+    background-color:black;
+    width: 100%;
+    height: 710px;
+    color: #14279B;
+}
+h1{
+     font-weight: 800;
+     font-size: 100px;
+}
+.homecontent{
+    padding-left: 15%;
+    padding-top: 17%;
+}
+
+.homebx p{
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #646FD4;
+}
+
+.links img{
+    margin-top: 2%;
+    margin-right:2%;
+    max-width: 40px;
+    height: auto;
+}
+.homeimg{
+    position: relative;
+    float: right;
+    border-radius: 80% 80% 100% 50%;
+    max-width: 30%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10%;
+    margin-right: 12%;
+}
+.aboutbx{
+    height: 650px;
+}
+h3{
+    font-size: 60px;
+    text-align:center;
+    margin-bottom: 3%;
+    padding-top: 3%;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* color: #14279B; */
+}
+.aboutbx p{
+    font-size: 20px;
+    margin-top:5%;
+    margin-right: 10%;
+}
+.aboutbx img{
+    position:relative;
+    float: left;
+    object-fit: contain;
+    max-width: 30%;
+    height: auto;
+    border-radius: 80% 80% 50% 100% ;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+.skillsbx{
+    background-color: #646FD4;
+    /* height: 400px; */
+    color: white;
+}
+.skillsbx .container{
+    width: 100%;
+    margin:  0 6.5%;
+    padding-bottom: 1%;
+}
+.skillsbx .container .row{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    flex-wrap: wrap;
+    gap: 3%;
+    margin: 5%;
+}
+.skillsbx .container .bar{
+    background-color: #14279B;
+    padding: 11px;
+    border-radius: 5%;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 20%);
+    transition: 0.2s;
+    margin-bottom: 10%;
+    
+}
+.skillsbx img{
+    max-width: 55px;
+    margin: 3%;
+}
+.skillsbx span{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.projectbx{
+    background-color: #DBDFFD;
+    /* height: 800px; */
+}
+.projectbx .container{
+    /* margin: 2%; */
+    padding: 2%;
+}
+.projectbx h3{
+    color: #14279B;
+}
+.view{
+    display: flex;
+    gap: 40%;
+    margin: 0 5% 3%;
+}
+.btn{
+    background-color: #14279B !important;
+    border-color: #14279B !important;
+    color: white;
+    font-weight: bold;
+}
+.footerbx{
+    padding: 1%;
+    color: white;
+    background-color: #14279B;
+}
+.footerbx .fbox{
+    display: flex;
+    flex-flow: row;
+}
+.footerbx .common{
+    margin: 2% 10%;
+}
+.footerbx .contact{
+    margin-left:25% ;
+}
+.contact h3{
+    text-align: left;
+    margin-bottom: 10%;
+}
+.mailme{
+    display: flex;
+
+}
+.mailme img{
+    max-width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 5%;
+}
+.footerbx .thanks p{
+    margin-top: 7%;
+}
+.footerbx .bottomline p{
+    text-align: center;
+}
+
+.bottomline a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+
+}
+
+
+@media only screen and (max-width:700px){
+    .homebx{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    h2 h3{
+        font-size: 20%;
+    }
+
+    .homebx{
+        height: auto;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    .homebx .imgbx{
+        padding-top: 5%;
+        padding-left: 15%;
+    }
+    .homebx .imgbx img{
+        float: none;
+        max-width: 55%;
+    }
+    .homebx .links img{
+        max-width: 30px;
+        height: auto;
+    }
+    .homebx .homecontent{
+        padding: 0;
+        padding-top: 5%;
+        padding-right:10% ;
+        
+    }
+    .aboutbx{
+        height: auto;
+    }
+    .aboutbx p{
+        padding-left: 10%;
+        font-size: 80%;
+    }
+    .aboutbx .imgbx{
+        padding-left: 25%;
+    }
+    .aboutbx img{
+        float: none;
+        max-width: 45%;
+    }
+    .skillsbx .container{
+        margin-left: 10%;
+    }
+    .skillsbx img{
+        max-width: 45px;
+    }
+    .skillsbx .bar .info span{
+        font-size: 12px;
+    }
+    .footerbx .fbox{
+        flex-flow: column;
+        text-align: center;
+    }
+    .footerbx p{
+        font-size: 75%;
+    }
+    .footerbx .thanks p{
+        margin-top: 3%;
+    }
+    .footerbx .common{
+        margin-bottom:0;
+    }
+    .footerbx .common h2 h3{
+        font-size: 80;
+    }
+    .contact h3{
+        text-align: center;
+        margin-bottom: 5%;
+        padding-right: 20%;
+    }
+    .mailme{
+        padding-left: 10%;
+    }
+    .mailme img{
+        margin-right:2% ;
+        max-width: 20px;
+        height: 20px;
+    }
+    .footerbx .contact .links{
+        margin: 0;
+        padding-right: 20%;
+        /* margin */
+        margin-bottom: 2%;
+    }
+    .footerbx .contact .links img{
+        max-width: 30px;
+        height: auto;
+
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    .mailme{
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media only screen and (max-width:1200px){
+    h2 h3{
+        font-size: 20%;
+    }
+    .homebx{
+        height: auto;
+    }
+    .homebx .imgbx{
+        padding-top: 12%;
+        padding-left: 20%;
+    }
+    .homebx .imgbx img{
+        max-width: 35%;
+        height: auto;
+    }
+    .homebx .homecontent{
+        padding: 12%;
+        font-size: 10%;
+    }
+    .homebx .links img{
+        max-width: 5%;
+        height: auto;
+    }
+    
+    .aboutbx {
+        height: auto;
+        padding-bottom:5% ;
+    }
+    .aboutbx p{
+        font-size: 95%;
+        margin-left: 10%;
+    }
+    .skillsbx span{
+        font-size: 90%;
+    }
+    .skillsbx img{
+        max-width: 40%;
+        height: auto;
+    }
+    .footerbx p{
+        font-size: 80%;
+    }
+    .footerbx .links img{
+        max-width: 15%;
+        height: auto;
+    }
+
+    
+}
+@media only screen and (max-width:700px){
+    .homebx .homecontent{
+        padding: 0;
+        margin-top: 15%;   
+    }
+    .homebx .imgbx{
+        padding: 0;
+        margin: 0;
+        margin-left: 8%;
+        max-width: 100%;
+    }
+    .aboutbx p{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:580px){
+    .homebx{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .homebx .homecontent{
+        padding: 0;
+        margin-top: 25%;   
+    }
+    .homebx .links img{
+        max-width: 7%;
+    }
+    .homebx .imgbx{
+        margin: 0;
+        padding: 0;
+    }
+    .homebx .homeimg{
+        margin:0;
+        margin-top: 5%;
+        padding: 0;
+        max-width: 100%;
+    }
+    .aboutbx{
+        height: auto;
+    }
+    .aboutbx img{
+        display: none;
+    }
+    .aboutbx p{
+        padding: 0;
+        margin:0 6%;
+    }
+    .header .navbar-brand{
+        margin-left: 2%;
+    }
+    .header h2{
+        font-size: 100%;
+    }
+    .skillsbx .container{
+        height: auto;
+        margin: 0 2%;
+        padding-right: 5%;
+        padding-bottom: 12%;
+    }
+    .skillsbx .container .row{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skillsbx .container .bar{
+        /* margin-right: 10%; */
+        width: 150%;
+    }
+    .skillsbx .container img{
+        max-width:30%;
+        float: left;
+    }
+    .skillsbx span{
+        font-size: 30px;
+    }
+    .mailme p{
+        padding-right: 5%;
+    }
+}
